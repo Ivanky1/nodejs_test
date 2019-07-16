@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="lib/jquery-ui.css">
+</head>
+<body>
+<div id="books">
+    <form id="addBook" action="#" enctype="multipart/form-data">
+        <div>
+            <label for="coverImage">CoverImage: </label>
+            <input id="coverImage" type="file" name="coverImage" />
+            <label for="title">Title: </label><input id="title" type="text" />
+            <label for="author">Author: </label><input id="author" type="text" />
+            <label for="releaseDate">Release date: </label>
+            <input id="releaseDate" type="text" />
+            <label for="keywords">Keywords: </label>
+            <input id="keywords" type="text" />
+            <button id="add">Add</button>
+        </div>
+    </form>
+</div>
+
+
+<script id="bookTemplate" type="text/template">
+    <img src="<%= coverImage %>"/>
+    <ul>
+        <li><%= title %></li>
+        <li><%= author %></li>
+        <li><%= $.format.date( new Date( releaseDate ), 'MMMM yyyy' ) %></li>
+        <li><% _.each(keywords, function(keyObj){ %>
+            <%=keyObj.keyword%>
+            <% }) %></li>
+    </ul>
+    <button class="delete">Delete</button>
+    <button class="edit">Edit</button>
+</script>
+<div id="task-edit"></div>
+<script id="editTaskTpl" type="text/template">
+    <form id="editTaskTpl_form">
+        <h2>Редактирование контакта: <%= title %></h2>
+        <input name='title' value='<%=title %>'>
+        <input name='author' value='<%=author %>'>
+        <input class="release_date" name='releaseDate' value='<%= $.format.date( new Date( releaseDate ), 'MMMM yyyy' ) %>'>
+        <input class="key" name='keywords' value='<% _.each(keywords, function(keyObj){ %><%=keyObj.keyword %> <%}) %>'>
+        <input type='submit' value='edit' class='book_edit_submit'>
+        <input type='submit' value='cancel' class='book_edit_cancel'>
+    </form>
+
+</script>
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script src="lib/jquery-ui.js"></script>
+<script src="lib/jquery-dateFormat.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+
+
+<script src="js/models/book.js"></script>
+<script src="js/collections/library.js"></script>
+<script src="js/views/book.js"></script>
+<script src="js/views/book_edit.js"></script>
+<script src="js/views/library.js"></script>
+<script src="js/app.js"></script>
+<!--
+<script src="js/views/book_edit.js"></script>
+<script src="js/views/library.js"></script>
+-->
+<script>
+
+    $(function() {
+      var books = [
+            { title: 'JavaScript: The Good Parts', author: 'Douglas Crockford',
+                releaseDate: '2008', keywords: 'JavaScript Programming' },
+            { title: 'The Little Book on CoffeeScript', author: 'Alex MacCaw',
+                releaseDate: '2012', keywords: 'CoffeeScript Programming' },
+            { title: 'Scala for the Impatient', author: 'Cay S. Horstmann',
+                releaseDate: '2012', keywords: 'Scala Programming' },
+            { title: 'American Psycho', author: 'Bret Easton Ellis',
+                releaseDate: '1991', keywords: 'Novel Splatter' },
+            { title: 'Eloquent JavaScript', author: 'Marijn Haverbeke',
+                releaseDate: '2011', keywords: 'JavaScript Programming' }
+        ];
+
+
+
+    });
+
+    var buffer = {
+        state: [],
+        append: function() {
+            for (var i = 0, n = arguments.length; i < n; i++) {
+                this.state.push(arguments[i]);
+            }
+            return this.state;
+        }
+    };
+    //var scores = buffer.append('Hello', 'Hello2', 'Hello3');
+    //average.apply(null, scores);
+
+
+</script>
+
+<div class="form_edit_book"></div>
+
+</body>
+</html>
+
+

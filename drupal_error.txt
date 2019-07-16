@@ -1,0 +1,4 @@
+Заменить строчку в файле xmlsitemap.xmlsitemap.inc:
+<?php$this->uri = xmlsitemap_sitemap_get_file($sitemap, $page);?>
+ на эту строчку:
+<?php$this->uri = $_SERVER['DOCUMENT_ROOT'].'/'.xmlsitemap_sitemap_get_file($sitemap, $page);?>

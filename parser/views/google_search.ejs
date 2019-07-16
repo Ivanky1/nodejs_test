@@ -1,0 +1,8 @@
+<h1>Поиск по запросу <%=keyword %></h1>
+<% feeds.entries.forEach(function(val) { %>
+	<a href="<%-val.link%>">
+		<%-val.title %>
+	</a><br/>
+	<%-val.contentSnippet %>
+	<br/>
+<% }) %>

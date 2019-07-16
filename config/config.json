@@ -1,0 +1,9 @@
+{
+    "port": "4157",
+    "domain": "localhost",
+    "app-view": "views",
+    "log-level": "dev",
+    "app-engine": "ejs",
+    "app-static": "public",
+    "dbcnn": "mongodb://localhost/test"
+}

@@ -1,0 +1,121 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'conf' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'conf', null ]
+6 verbose cache add name=undefined spec="conf" args=["conf",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'conf',
+7 verbose parsed url   path: 'conf',
+7 verbose parsed url   href: 'conf' }
+8 silly lockFile 2d4de2ba-conf conf
+9 verbose lock conf C:\Users\ena\AppData\Roaming\npm-cache\2d4de2ba-conf.lock
+10 silly lockFile 2d4de2ba-conf conf
+11 silly lockFile 2d4de2ba-conf conf
+12 verbose addNamed [ 'conf', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 535d2135-conf conf@
+15 verbose lock conf@ C:\Users\ena\AppData\Roaming\npm-cache\535d2135-conf.lock
+16 silly addNameRange { name: 'conf', range: '*', hasData: false }
+17 verbose request where is /conf
+18 verbose request registry http://registry.npmjs.org/
+19 verbose request id 605466d7fb349e84
+20 verbose url raw /conf
+21 verbose url resolving [ 'http://registry.npmjs.org/', './conf' ]
+22 verbose url resolved http://registry.npmjs.org/conf
+23 verbose request where is http://registry.npmjs.org/conf
+24 info trying registry request attempt 1 at 12:39:08
+25 http GET http://registry.npmjs.org/conf
+26 http 200 http://registry.npmjs.org/conf
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"4H72SUI6U832DRS64ZCLKXJO0"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '4323',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Mon, 20 Apr 2015 09:39:08 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-fra1238-FRA',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1429522748.530320,VS0,VE112',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'conf', range: '*', hasData: true }
+29 silly addNameRange versions [ 'conf', [ '0.8.0', '0.8.1', '0.8.2', '0.8.3', '0.8.4' ] ]
+30 verbose addNamed [ 'conf', '0.8.4' ]
+31 verbose addNamed [ '0.8.4', '0.8.4' ]
+32 silly lockFile 2c01607e-conf-0-8-4 conf@0.8.4
+33 verbose lock conf@0.8.4 C:\Users\ena\AppData\Roaming\npm-cache\2c01607e-conf-0-8-4.lock
+34 silly lockFile f6aad136-ry-npmjs-org-conf-conf-0-8-4-tgz http://registry.npmjs.org/conf/-/conf-0.8.4.tgz
+35 verbose lock http://registry.npmjs.org/conf/-/conf-0.8.4.tgz C:\Users\ena\AppData\Roaming\npm-cache\f6aad136-ry-npmjs-org-conf-conf-0-8-4-tgz.lock
+36 verbose addRemoteTarball [ 'http://registry.npmjs.org/conf/-/conf-0.8.4.tgz',
+36 verbose addRemoteTarball   '278aa5d8fe0108d2d72215b5c794b5f000333598' ]
+37 info retry fetch attempt 1 at 12:39:08
+38 verbose fetch to= C:\Users\ena\AppData\Local\Temp\npm-2996-xIgm0o35\registry.npmjs.org\conf\-\conf-0.8.4.tgz
+39 http GET http://registry.npmjs.org/conf/-/conf-0.8.4.tgz
+40 http 200 http://registry.npmjs.org/conf/-/conf-0.8.4.tgz
+41 silly lockFile f6aad136-ry-npmjs-org-conf-conf-0-8-4-tgz http://registry.npmjs.org/conf/-/conf-0.8.4.tgz
+42 silly lockFile f6aad136-ry-npmjs-org-conf-conf-0-8-4-tgz http://registry.npmjs.org/conf/-/conf-0.8.4.tgz
+43 silly lockFile 2c01607e-conf-0-8-4 conf@0.8.4
+44 silly lockFile 2c01607e-conf-0-8-4 conf@0.8.4
+45 silly lockFile 535d2135-conf conf@
+46 silly lockFile 535d2135-conf conf@
+47 silly resolved [ { name: 'conf',
+47 silly resolved     version: '0.8.4',
+47 silly resolved     description: 'Config library for Nodejs',
+47 silly resolved     keywords: [ 'dsl', 'conf', 'config', 'script', 'general' ],
+47 silly resolved     homepage: 'https://github.com/jfd/node-conf',
+47 silly resolved     author:
+47 silly resolved      { name: 'Johan Dahlberg',
+47 silly resolved        email: 'dahlberg.johan@gmail.com',
+47 silly resolved        url: 'https://github.com/jfd/' },
+47 silly resolved     main: './conf',
+47 silly resolved     repository: { type: 'git', url: 'git://github.com/jfd/node-conf.git' },
+47 silly resolved     os: [ 'macos', 'linux' ],
+47 silly resolved     engines: { node: '>=0.3.0' },
+47 silly resolved     dependencies: {},
+47 silly resolved     devDependencies: {},
+47 silly resolved     _id: 'conf@0.8.4',
+47 silly resolved     _engineSupported: true,
+47 silly resolved     _npmVersion: '1.0.3',
+47 silly resolved     _nodeVersion: 'v0.5.3',
+47 silly resolved     _defaultsLoaded: true,
+47 silly resolved     dist:
+47 silly resolved      { shasum: '278aa5d8fe0108d2d72215b5c794b5f000333598',
+47 silly resolved        tarball: 'http://registry.npmjs.org/conf/-/conf-0.8.4.tgz' },
+47 silly resolved     scripts: {},
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _shasum: '278aa5d8fe0108d2d72215b5c794b5f000333598',
+47 silly resolved     _from: 'conf@',
+47 silly resolved     _resolved: 'http://registry.npmjs.org/conf/-/conf-0.8.4.tgz' } ]
+48 info install conf@0.8.4 into C:\nodejs
+49 info installOne conf@0.8.4
+50 error notsup Unsupported
+50 error notsup Not compatible with your operating system or architecture: conf@0.8.4
+50 error notsup Valid OS:    macos,linux
+50 error notsup Valid Arch:  any
+50 error notsup Actual OS:   win32
+50 error notsup Actual Arch: x64
+51 error System Windows_NT 6.1.7601
+52 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "conf"
+53 error cwd C:\nodejs
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 error code EBADPLATFORM
+57 verbose exit [ 1, true ]

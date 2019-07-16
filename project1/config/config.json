@@ -1,0 +1,17 @@
+{
+    "port": "4040",
+    "domain": "localhost",
+    "app_view": "views",
+    "log_level": "dev",
+    "app_engine": "jade",
+    "app_static": "public",
+    "session": {
+        "secret": "MySecret",
+        "key": "cookies",
+        "cookie": {
+            "path": "/",
+            "maxAge": null,
+            "httpOnly": true
+        }
+    }
+}
